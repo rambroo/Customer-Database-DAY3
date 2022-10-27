@@ -1,0 +1,26 @@
+-- drop table CUSTOMER;
+use instagram;
+CREATE TABLE  CUSTOMER
+   (	
+    CUSTOMER_CODE CHAR(6) ,
+	CUSTOMER_NAME CHAR(40), 
+	WOKING CHAR(35), 
+	COMMISSION float(10),
+	PHONE_NO CHAR(15), 
+	COUNTRY VARCHAR(25) 
+	 );
+INSERT INTO CUSTOMER VALUES ('A007', 'Ramasundar', 'Bangalore', '0.15', '077-25814763', '');
+INSERT INTO CUSTOMER VALUES ('A003', 'Alex ', 'London', '0.13', '075-12458969', '');
+INSERT INTO CUSTOMER VALUES ('A008', 'Alford', 'New York', '0.12', '044-25874365', '');
+INSERT INTO CUSTOMER VALUES ('A011', 'Ravi Kumar', 'Bangalore', '0.15', '077-45625874', '');
+INSERT INTO CUSTOMER VALUES ('A010', 'Santakumar', 'Chennai', '0.14', '007-22388644', '');
+INSERT INTO CUSTOMER VALUES ('A012', 'Lucida', 'San Jose', '0.12', '044-52981425', '');
+INSERT INTO CUSTOMER VALUES ('A005', 'Anderson', 'Brisban', '0.13', '045-21447739', '');
+INSERT INTO CUSTOMER VALUES ('A001', 'Subbarao', 'Bangalore', '0.14', '077-12346674', '');
+INSERT INTO CUSTOMER VALUES ('A002', 'Mukesh', 'Mumbai', '0.15', '029-12358964', '');
+INSERT INTO CUSTOMER VALUES ('A006', 'McDen', 'London', '0.15', '078-22255588', '');
+INSERT INTO CUSTOMER VALUES ('A004', 'Ivan', 'Torento', '0.15', '008-22544166', '');
+INSERT INTO CUSTOMER VALUES ('A009', 'Benjamin', 'Hampshair', '0.11', '008-22536178', '');
+select CUSTOMER_NAME as name  from CUSTOMER
+order by CUSTOMER_NAME ;
+drop table CUSTOMER;
